@@ -23,7 +23,7 @@ namespace ManejoDatosOntanedaTomas.Repositories
             try
             {
                 string json_data = JsonConvert.SerializeObject(estudiante);
-                File.WriteAllText(_filename, "XxxEstebinxxX");
+                File.WriteAllText(_filename, json_data);
                 return true;
             }
             catch (Exception)

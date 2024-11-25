@@ -12,14 +12,38 @@
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
+            
+            <Label
+                x:Name="Label_id"
+                Text="{Binding Id}"/>
+            <Label
+                x:Name="Label_Nombre"
+                Text="{Binding Nombre}"/>
 
             <Label
-                x:Name="Label_id"/>
-            <Label
-                x:Name="Label_id"/>
+                x:Name="Label_Carrera"
+                Text="{Binding Carrera}"/>
 
-            <Label
-                x:Name="Label_id"/>
+            <Button
+                x:Name="GuardarEstudiante"
+                Text="Guardar Estudiante"
+                Clicked="GuardarEstudiante_Clicked"/>
+
+            <Editor
+                x:Name="Editor_Id"
+                Placeholder="Ingrese el ID"
+                AutoSize="TextChanges"
+                HeightRequest="40" />
+            <Editor
+                x:Name="Editor_Nombre"
+                Placeholder="Ingrese el Nombre"
+                AutoSize="TextChanges"
+                HeightRequest="40" />
+            <Editor
+                x:Name="Editor_Carrera"
+                Placeholder="Ingrese la Carrera"
+                AutoSize="TextChanges"
+                HeightRequest="40" />
         </VerticalStackLayout>
     </ScrollView>
 
